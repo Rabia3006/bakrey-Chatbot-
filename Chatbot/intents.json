@@ -1,0 +1,23 @@
+{"intents": [
+  {"tag": "greetings",
+    "patterns": ["hello", "hey","hi","good day","Greetings","what's up","how is it going"],
+    "responses": ["Hello!", "Hey!", "What can I do for you?"]},
+  {"tag": "goodbye",
+    "patterns": ["See ya", "see you later","bye","goodbye","have a nice day","bye bye"],
+    "responses": ["Goodbye!", "See you later.", "Please come back soon."]},
+  {"tag": "age",
+    "patterns": ["how old", "how old are you","what is your age","how old are you","age?"],
+    "responses": ["My owner is Kashif and he is very old", "Don't know", "My owner is ancient"]},
+  {"tag": "name",
+    "patterns": ["name", "your name","what should I call you","who are you"],
+    "responses": ["I'm a Chatbot.", "My name is AI Chatbot.", "I am your Chatbot."]},
+  {"tag": "shop",
+    "patterns": ["i would like to buy something", "what are your products","what do you sell","product names"],
+    "responses": ["You can buy Laptops, Monitors, PCs from us.", "We sell computers and accessories.", "We are computer sellers."]},
+  {"tag": "hours",
+    "patterns": ["when you open", "opening hours","what time you close","closing hours", "what are your hours", "when you open", "when you close"],
+    "responses": ["We are 24/7.", "We are open 24 hours seven days a week.", "24/7"]},
+  {"tag": "default",
+    "patterns": [],
+    "responses": ["Please ask me anything related to my shop.", "How can I help you in shopping computers?"]}
+]}
