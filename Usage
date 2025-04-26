@@ -1,0 +1,32 @@
+##Training the Model
+
+1)Prepare the Data: The intents.json file contains the intents and training phrases. Each intent has a set of phrases that the chatbot will learn to recognize.
+2)Train the Model: Run training.py to train the chatbot model. This script:
+  -Loads the training data from intents.json.
+  -Preprocesses the text data (tokenization, lemmatization).
+  -Splits the data into input features (X) and output labels (y).
+  -Builds a neural network model using Keras.
+  -Trains the model using the training data.
+  -Saves the trained model to chatbot_model.keras.
+
+##Running the Chatbot
+ -Load the Model: The chatbot.py script loads the trained model, intents, words, and classes from their respective files.
+ -Process User Input: The script defines functions to clean up and preprocess user input, converting it into a format that the model can understand.
+ -Predict Intent: The script uses the trained model to predict the intent behind the user's input.
+ -Generate Response: Based on the predicted intent, the script generates an appropriate response.
+
+Code Details
+
+##training.py
+ -Data Preparation: The script reads the training data from intents.json, shuffles it, and converts it into a NumPy array.
+ -Model Building: A Sequential model is built with two Dense layers and a Dropout layer to prevent overfitting.
+ -Compilation: The model is compiled with the Adam optimizer and categorical crossentropy loss.
+ -Training: The model is trained on the preprocessed data for 200 epochs with a batch size of 5.
+
+##chatbot.py
+
+ -Imports: The script imports necessary libraries and modules.
+ -Data Loading: It loads the trained model, intents, words, and classes.
+ -Text Preprocessing: Functions are defined to clean up and tokenize user input.
+ -Intent Prediction: The script uses the trained model to predict the intent behind the user's input.
+ -Response Generation: Based on the predicted intent, the script generates an appropriate response.
