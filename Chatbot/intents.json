@@ -1,23 +1,341 @@
-{"intents": [
-  {"tag": "greetings",
-    "patterns": ["hello", "hey","hi","good day","Greetings","what's up","how is it going"],
-    "responses": ["Hello!", "Hey!", "What can I do for you?"]},
-  {"tag": "goodbye",
-    "patterns": ["See ya", "see you later","bye","goodbye","have a nice day","bye bye"],
-    "responses": ["Goodbye!", "See you later.", "Please come back soon."]},
-  {"tag": "age",
-    "patterns": ["how old", "how old are you","what is your age","how old are you","age?"],
-    "responses": ["My owner is Kashif and he is very old", "Don't know", "My owner is ancient"]},
-  {"tag": "name",
-    "patterns": ["name", "your name","what should I call you","who are you"],
-    "responses": ["I'm a Chatbot.", "My name is AI Chatbot.", "I am your Chatbot."]},
-  {"tag": "shop",
-    "patterns": ["i would like to buy something", "what are your products","what do you sell","product names"],
-    "responses": ["You can buy Laptops, Monitors, PCs from us.", "We sell computers and accessories.", "We are computer sellers."]},
-  {"tag": "hours",
-    "patterns": ["when you open", "opening hours","what time you close","closing hours", "what are your hours", "when you open", "when you close"],
-    "responses": ["We are 24/7.", "We are open 24 hours seven days a week.", "24/7"]},
-  {"tag": "default",
-    "patterns": [],
-    "responses": ["Please ask me anything related to my shop.", "How can I help you in shopping computers?"]}
-]}
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": [
+        "hello",
+        "hey",
+        "hi",
+        "good day",
+        "Greetings",
+        "what's up",
+        "how is it going",
+        "whatcha",
+        "heya",
+        "Good to see you!",
+        "Hey there!",
+        "Hello there",
+        "Whats going on",
+        "Good Evening",
+        "Good Morning",
+        "Good Afternoon",
+        "Greetings",
+        "Howdy"
+      ],
+      "responses": [
+        "Hello! What can I do for you?",
+        "Hello! How can I assist you today?",
+        "Greetings! how can i help you today?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "See ya",
+        "see you later",
+        "bye",
+        "goodbye",
+        "have a nice day",
+        "bye bye",
+        "tata",
+        "Talk to you soon",
+        "Catch you later",
+        "have a good day",
+        "Take care",
+        "Later!",
+        "ciao"
+      ],
+      "responses": [
+        "Goodbye!",
+        "See you later.",
+        "See you later! Stay safe!",
+        "Catch you later! Let me know if you need anything else!",
+        " Hope we talk soon! It was great assisting you!",
+        "Bye-bye! See you next time!",
+        "Good bye! Have a great day",
+        "Bye! Enjoy your day"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "name",
+        "your name",
+        "what should I call you",
+        "who are you",
+        "whats your name?",
+        "name please?",
+        "Tell me your name?",
+        "May I know your name?",
+        "Are you a bot? Whats your name?",
+        "Who am I talking to you?",
+        "Introduce yourself?",
+        "Do you have name?"
+      ],
+      "responses": [
+        "I'm the AI Chatbot for The Tipsy Boutique! You can call me Tipsy if you wish!",
+        "I'm your assistant! You can call me Tipsybot",
+        "I am Tipsybot, and here to help",
+        "I am your virtual assistant",
+        "I am Tipsybot,your virtual assitant"
+      ]
+    },
+    {
+      "tag": "hours",
+      "patterns": [
+        "when are you open?",
+        "opening hours",
+        "what time you close",
+        "closing hours",
+        "what are your hours",
+        "when you open",
+        "when you close",
+        "open hours?",
+        "open close time?",
+        "availability?",
+        "when you are available?",
+        "when should I come?",
+        "preferrable time?",
+        "Visiting hours?",
+        "when should I come?"
+      ],
+      "responses": [
+        "We are open 7AM to 9PM Monday-Saturday. but i avaliable 24/7",
+        "I’m available anytime you need me. but shop is open 7AM to 9PM Monday-Saturday ",
+        "You can reach out to me at any time. I’m always available to help! But the shop is open 7AM to 9PM Monday-Saturday",
+        "I’m always online and ready to assist, 7 days a week. but shop is open 7AM to 9PM Monday-Saturday",
+        "I'm available 24/7 to assist you! but we are open 7AM to 9PM Monday-Saturday"
+      ]
+    },
+    {
+      "tag": "menu items",
+      "patterns": [
+        "What are your menu items?",
+        "menu",
+        "What menu items do you have?",
+        "Are there different prices for seasonal or limited-edition items?",
+        "What’s the price range for your bakery items?",
+        "Do you have a full menu I can see?",
+        "What other bakery items do you offer besides donuts and cupcakes?",
+        "menu please?",
+        "I want to order",
+        "best items?",
+        "what are your favourites?",
+        "could you suggest some of the best donuts?"
+      ],
+      "responses": [
+        "We sell regular sized donuts, mini donuts, filled mini donuts, and cupcakes! Our donut flavours are: Vanilla, Chocolate, Hot Fudge Oreo, S'mores, Brownie, Chocolate Chip Cookie, Strawberry Cheesecake, Oreo, Plain Glazed, and Cinnamon Sugar.",
+        "If you would like to see our full menu, please visit the Menu tab on our website!"
+        
+      ]
+    },
+    {
+      "tag": "Items flavours",
+      "patterns": [
+        "What flavours of donuts do you have?",
+        "What filled donuts do you have?",
+        "What are your top donut flavours?",
+        "I love chocolate, what chocolate flavours can you recommend?"
+      ],
+      "responses": [
+        "Our donut flavours are: Vanilla, Chocolate, Hot Fudge Oreo, S'mores, Brownie, Chocolate Chip Cookie, Strawberry Cheesecake, Oreo, Plain Glazed, and Cinnamon Sugar.",
+        "Our most popular chocolate flavours are Brownie, S'mores, Hot Fudge Oreo, and Chocolate!"
+      ]
+    },
+    {
+      "tag": "limited_edition items",
+      "patterns": [
+        "Are there different prices for seasonal or limited-edition items?",
+        "What’s the price range for your bakery items?",
+        "Are there any seasonal items on your menu?",
+        "special items?"
+      ],
+      "responses": [
+        "Yes, seasonal and limited-edition items may have special pricing and it depends on the different factors."
+      ]
+    },
+    {
+      "tag": "item_price",
+      "patterns": [
+        "How much does a regular donut and cupcake cost?",
+        "price",
+        "What’s the price donuts and cupcakes?",
+        "Can you tell me the cost of a simple donut and cupcake?",
+        "What’s the pricing for a standard doughnut and cupcake?",
+        "What do you charge for a plain doughnut and cupcake?",
+        "costing",
+        "costs please?",
+        "how much?"
+      ],
+      "responses": [
+        "The regular/basic/simple/plain doughnuts are $1, and the cupcakes are $2! Please visit the Pricing tab on our website for information on special prices!"
+      ]
+    },
+    {
+      "tag": "custom_made",
+      "patterns": [
+        "Do you customize?",
+        "Can you make something custom?",
+        "Do you offer custom-made items?",
+        "I want a personalized design",
+        "Can I customize this?",
+        "Do you create custom products?",
+        "I need something tailored for me is it possible?",
+        "Can you make something special for me?",
+        "Do you do custom orders?",
+        "Can I request a custom item?",
+        "I’m looking for a unique, custom-made product"
+      ],
+      "responses": [
+        "Yes, we can create custom items! Let me know what you have in mind.",
+        "Of course! Tell me the details, and we’ll work on a custom solution for you.",
+        "Definitely,We offer custom-made options! What are you looking for specifically?",
+        "Absolutely! Let’s discuss your requirements for a personalized product.",
+        "Yes,Custom orders are our specialty! Share your ideas, and we’ll bring them to life.",
+        "Yes,We’d love to help with your custom needs. Please provide more details!"
+      ]
+    },
+    {
+      "tag": "custom_made_pricing",
+      "patterns": [
+        "How much does a custom item cost?",
+        "Do custom orders cost more?",
+        "Is there unique pricing for custom-designed doughnuts or cupcakes?",
+        "Do you offer custom pricing for special cupcakes or doughnuts orders?",
+        "Are custom cupcake flavors more expensive?",
+        "How much will a custom order cost me?",
+        "Can you give me a price estimate for custom-made items?",
+        "can you tell me the cost of something custom?"
+      ],
+      "responses": [
+        "Yes, we offer tailored pricing for custom doughnuts and cupcakes, depending on design details and specifications. Please visit the Pricing tab on our website for more information on special orders!",
+        "Yeah,sure! custom orders are priced based on size,design,flavours",
+        "We’d love to give you a quote! Please share your customization details",
+        "The cost of custom items depends on your requirements. Let us know your preferences for an estimate costing."
+      ]
+    },
+    {
+      "tag": "delivery_charges",
+      "patterns": [
+        "Is there an additional charge for delivery?",
+        "Are there extra charges for bakery delivery?",
+        "What’s the cost of shipping?",
+        "Are delivery charges included?",
+        "Do you offer free delivery?",
+        "What’s the cost for home delivery?",
+        "Are there any delivery charges?"
+      ],
+      "responses": [
+        "Yes, delivery fees are extra and vary by location and order size.but our regular customer get free delivery ",
+        "Our delivery fees vary by location, but our regular customer get free delivery"
+      ]
+    },
+    {
+      "tag": "discounts",
+      "patterns": [
+        "Do you offer discounts for large orders of baked goods?",
+        "Is there a price discount if I buy a dozen of your top flavors?",
+        "Any discount if my order size is large?"
+      ],
+      "responses": [
+        "Yes, we provide discounts on bulk orders, with rates varying by the quantity and item type.",
+        "Yes, we give discounts if you order dozen dounts/cupcakes or more."
+      ]
+    },
+    {
+      "tag": "seasonal_edition",
+      "patterns": [
+        "Are there different prices for seasonal or limited-edition items?",
+        "What is the price range for your bakery items?",
+        "Do different donut flavors have different prices?",
+        "How much do specialty donuts cost compared to regular ones?",
+        "Are the top flavors priced higher than regular donuts?"
+      ],
+      "responses": [
+        "Yes, seasonal and limited-edition items may have special pricing.",
+        "Prices range from $1 to $15 depending on the item and customization."
+      ]
+    },
+    {
+      "tag": "filling",
+      "patterns": [
+        "Are there price differences between filled and unfilled donuts?",
+        "What’s the price for a filled donut?",
+        "How much is a box of assorted filled donuts?",
+        "Is there an extra charge for Crème Brûlée and Boston Cream?"
+      ],
+      "responses": [
+        "All filled donuts are for $1.50 each. but unfilled are for $1",
+        "A box of assorted filled donuts costs around $12."
+      ]
+    },
+    {
+      "tag": "assorted_filling",
+      "patterns": [
+
+        "How much is a box of assorted filled donuts?",
+        "What’s the price of a box of assorted filled donuts?",
+        "How much does a box of assorted filled donuts cost?",
+        "Can you tell me the cost of a box of assorted filled donuts?"
+      ],
+      "responses": [
+        "A box of assorted filled donuts costs around $12."
+      ]
+    },
+    {
+      "tag": "item_avalibility",
+      "patterns": [
+        "Are your donuts and cupcakes available every day?",
+        "Do you have donuts and cupcakes in stock each day?",
+        "Can I buy donuts and cupcakes daily?"
+      ],
+      "responses": [
+        "Yes, donuts and cupcakes are available every day."
+      ]
+    },
+    {
+      "tag": "Time",
+      "patterns": [
+        "What time do you start selling donuts and cupcakes?",
+        "At what time are donuts and cupcakes available for purchase?",
+        "When do you begin selling donuts and cupcakes each morning?"
+      ],
+      "responses": [
+        "We start selling donuts and cupcakes as soon as we open at 7 AM."
+      ]
+    },
+    {
+      "tag": "quantity_of_item",
+      "patterns": [
+        "Do you have a limited supply of donuts and cupcakes each day?",
+        "Do you only make a certain number of donuts and cupcakes each day?",
+        "Is there a daily limit on donuts and cupcakes?"
+      ],
+      "responses": [
+        "Yes, there is a limited quantity each day, so visiting early is recommended."
+      ]
+    },
+    {
+      "tag": "pre_order",
+      "patterns": [
+        "Can I pre-order donuts or cupcakes for a specific date?",
+        "Can I schedule a donut or cupcake order ahead of time?",
+        "Is it possible to place an order for donuts or cupcakes in advance?"
+      ],
+      "responses": [
+        "Absolutely, we accept pre-orders for any date you need."
+      ]
+    },
+    {
+      "tag": "special_requirments",
+      "patterns": [
+        "Are there certain days when you offer special flavors or items?",
+        "Are there days when you feature limited flavors or seasonal items?",
+        "Do you have special flavors available only on specific days?"
+      ],
+      "responses": [
+        "Yes, we offer unique flavors on select days of the week."
+      ]
+    }
+  ]
+}
