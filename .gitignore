@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+models/*.keras
+models/*.pkl
+.venv/
+nltk_data/
